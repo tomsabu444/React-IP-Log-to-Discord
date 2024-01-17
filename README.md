@@ -1,9 +1,9 @@
 ## It just to demonstrate ~  what all details can a website gather from a user just on a single click on link !~
 
-*<h3> screenshot</h3>*
-<img src="https://cdn.discordapp.com/attachments/946018559421734914/1196664648909471915/ip-log.PNG" width=450 >
+<h3>screenshot</h3>
+<img src="https://cdn.discordapp.com/attachments/946018559421734914/1196664648909471915/ip-log.PNG" width=520 >
 
-***<h3> Sample-Code.jsx </h3>***
+**<h3> Sample-Code.jsx </h3>**
 
 ```js
 import React, { useEffect } from 'react';
@@ -64,3 +64,11 @@ const DiscordWebhookLogger = () => {
 };
 export default DiscordWebhookLogger;
 ```
+<br>
+
+# Learn More
+
+To learn more - please check out the **Documentation**
+
+- **Discord Webhook** [Docs](https://discord.com/developers/docs/resources/webhook)
+- **IP - API** [Docs](https://ipapi.co/api/#location-of-clients-ip)
