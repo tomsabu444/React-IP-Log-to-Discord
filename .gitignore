@@ -20,7 +20,6 @@ vite.config.js
 package-lock.json
 package.json
 .eslintrc.cjs
-index.html
 public
 
 # Editor directories and files
