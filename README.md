@@ -1,22 +1,28 @@
 ## It captures the IP details of visitors who have visited the website and sends them to Discord
 
+# Learn More
+
+To learn more - please check out the **Documentation**
+
+- **Discord Webhook** [Docs](https://discord.com/developers/docs/resources/webhook)
+- **IP - API** [Docs](https://ipapi.co/api/#location-of-clients-ip)
+
 <h3>screenshot</h3>
 <img src="https://cdn.discordapp.com/attachments/946018559421734914/1196664648909471915/ip-log.PNG" width=520 >
 
 **<h3> Sample-Code.jsx </h3>**
 
-```js
-import React, { useEffect } from 'react';
+````js
+import React, { useEffect } from "react";
 
 const DiscordWebhookLogger = () => {
-  const webHookUrl = "WebHook_URL";  //Replace with discord webhook URL
+  const webHookUrl = "WebHook_URL"; //Replace with discord webhook URL
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-
         // Fetching IP data
-        const response = await fetch('https://ipapi.co/json/');
+        const response = await fetch("https://ipapi.co/json/");
         const data = await response.json();
 
         // Data Destructuring
@@ -32,43 +38,53 @@ const DiscordWebhookLogger = () => {
 
         // Discord Message Structure
         const params = {
-          content: 
-          "```IP-Address: " + ip +
-            "\n \n Timezone: " + timezone +
-            "\n Provider: " + provider +
-            "\n \n Country and Region: \n " + country + " - " + region +
-            "\n \n Zip Code: " + zip +
-            "\n City: " + city +
-            "\n \n Location:\n\t"
-            + "Longitude: " + lon + "\n\t"
-            + "Latitude: " + lat + "```"
+          content:
+            "```IP-Address: " +
+            ip +
+            "\n \n Timezone: " +
+            timezone +
+            "\n Provider: " +
+            provider +
+            "\n \n Country and Region: \n " +
+            country +
+            " - " +
+            region +
+            "\n \n Zip Code: " +
+            zip +
+            "\n City: " +
+            city +
+            "\n \n Location:\n\t" +
+            "Longitude: " +
+            lon +
+            "\n\t" +
+            "Latitude: " +
+            lat +
+            "```",
         };
         await fetch(webHookUrl, {
-          method: 'POST',
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify(params),
         });
       } catch (error) {
-        console.error('Error fetching IP address:', error);
+        console.error("Error fetching IP address:", error);
       }
     };
     fetchData();
   }, []);
   return (
     <>
-    <h3>You can display additional info or feedback to the user if needed</h3> 
+      <h3>You can display additional info or feedback to the user if needed</h3>
     </>
   );
 };
 export default DiscordWebhookLogger;
-```
+````
+
 <br>
 
-# Learn More
+# Disclaimer
 
-To learn more - please check out the **Documentation**
-
-- **Discord Webhook** [Docs](https://discord.com/developers/docs/resources/webhook)
-- **IP - API** [Docs](https://ipapi.co/api/#location-of-clients-ip)
+This tool is provided "as is" without any warranty. The developers and maintainers of this tool are not responsible for any legal consequences resulting from its use. It is the responsibility of the website owner to comply with applicable laws and regulations.
