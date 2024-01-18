@@ -1,4 +1,4 @@
-## It just to demonstrate ~  what all details can a website gather from a user just on a single click on link !~
+## It captures the IP details of visitors who have visited the website and sends them to Discord
 
 <h3>screenshot</h3>
 <img src="https://cdn.discordapp.com/attachments/946018559421734914/1196664648909471915/ip-log.PNG" width=520 >
