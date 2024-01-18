@@ -87,4 +87,4 @@ export default DiscordWebhookLogger;
 
 # Disclaimer
 
-This tool is provided "as is" without any warranty. The developers and maintainers of this tool are not responsible for any legal consequences resulting from its use. It is the responsibility of the website owner to comply with applicable laws and regulations.
+### This tool is provided "as is" without any warranty. The developers and maintainers of this tool are not responsible for any legal consequences resulting from its use. It is the responsibility of the website owner to comply with applicable laws and regulations.
