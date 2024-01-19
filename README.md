@@ -6,7 +6,9 @@ To learn more - please check out the **Documentation**
 
 - **Discord Webhook** [Docs](https://discord.com/developers/docs/resources/webhook)
 - **IP - API** [Docs](https://ipapi.co/api/#location-of-clients-ip)
+- **.env** [Docs](https://www.dotenv.org/docs/languages/nodejs)
 
+Note: Ensure that you have a `.env.example` file in your repository with placeholder values. Users can copy this file to `.env` and replace the placeholders with their actual values. Additionally, include `.env` in your `.gitignore` file to prevent sensitive information from being committed to your version control system.
 <h3>screenshot</h3>
 <img src="https://cdn.discordapp.com/attachments/946018559421734914/1196664648909471915/ip-log.PNG" width=520 >
 
